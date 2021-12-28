@@ -9,7 +9,7 @@ setup(name='Stochastic Threshold Model Trees',
         'Topic :: Cheminformatics :: Extrapolation',
     ],
     #url='https://github.com/funatsu-lab/Stochastic-Threshold-Model-Trees',
-    url='https://github.com/kskkry/Stochastic-Threshold-Model-Trees.git'
+    url='https://github.com/kskkry/Stochastic-Threshold-Model-Trees'
     author='Kohei Numata and Kenichi Tanaka',
     author_email='knumata@chemsys.t.u-tokyo.ac.jp',
     packages=find_packages(),
