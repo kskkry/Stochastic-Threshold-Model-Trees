@@ -169,12 +169,10 @@ class StochasticThresholdModelTrees():
     
     def score(self, X, y, sample_weight=None):
         """
-        Random Forest Regressorの親クラスであるRegerssorMixinクラス
-        (https://github.com/scikit-learn/scikit-learn/blob/c72ace8cd652309963ecdd6c01e33fa3c58c9161/sklearn/base.py#L673)
-        内にscoreメソッドがあり, これを加えた
-        """
+        ref: 
+        from RegerssorMixin that is the parent class of Random Forest Regressor
+        https://github.com/scikit-learn/scikit-learn/blob/c72ace8cd652309963ecdd6c01e33fa3c58c9161/sklearn/base.py#L673
         
-        """
         Return the coefficient of determination of the prediction.
         The coefficient of determination :math:`R^2` is defined as
         :math:`(1 - \\frac{u}{v})`, where :math:`u` is the residual
