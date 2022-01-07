@@ -21,6 +21,7 @@ class StochasticThresholdModelTrees():
         min_samples_leaf=1,
         max_features='auto',
         f_select=True,
+        selected_features=None,
         ensemble_pred='mean',
         scaling=False,
         bootstrap=True,
@@ -37,6 +38,7 @@ class StochasticThresholdModelTrees():
         self.min_samples_leaf = min_samples_leaf
         self.max_features = max_features
         self.f_select = f_select
+        self.selected_features = selected_features
         self.ensemble_pred = ensemble_pred
         self.scaling = scaling
         self.bootstrap = bootstrap
@@ -87,6 +89,7 @@ class StochasticThresholdModelTrees():
             min_samples_split=self.min_samples_split,
             min_samples_leaf=self.min_samples_leaf,
             f_select=self.f_select,
+            selected_features=self.selected_features,
             scaling=self.scaling,
             random_state=seed,
             split_continue=self.split_continue
