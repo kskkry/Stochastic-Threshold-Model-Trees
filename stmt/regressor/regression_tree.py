@@ -16,7 +16,6 @@ class RegressionTree():
         f_select=True,
         scaling=False,
         random_state=None,
-        selected_features=None,
         split_continue=False
     ):
         self.tree = None
@@ -29,7 +28,6 @@ class RegressionTree():
         self.f_select = f_select
         self.scaling = scaling
         self.random_state = random_state
-        self.selected_features = selected_features
         self.split_continue = split_continue
 
     def fit(self, X, y):
@@ -45,7 +43,6 @@ class RegressionTree():
             f_select=self.f_select,
             scaling=self.scaling,
             random_state=self.random_state,
-            selected_features=self.selected_features,
             split_continue=self.split_continue
         )
         self.tree.fit(X, y, 0)
