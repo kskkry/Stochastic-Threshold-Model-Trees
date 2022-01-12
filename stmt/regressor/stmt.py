@@ -166,7 +166,7 @@ class StochasticThresholdModelTrees():
         for param, value in params.items():
             setattr(self, param, value)
         return self
-    
+
     def score(self, X, y, sample_weight=None):
         """
         ref: 
