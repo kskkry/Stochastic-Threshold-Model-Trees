@@ -102,6 +102,9 @@ class StochasticThresholdModelTrees():
         """Count the number of features used to divide the tree."""
         return np.array(
             [tree.count_feature() for tree in self.forest])
+        
+    def test(self):
+        return self
 
     def _bootstrap(self, seed, X, y):
         n_samples, n_features = X.shape
